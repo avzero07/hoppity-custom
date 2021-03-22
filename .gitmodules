@@ -1,3 +1,6 @@
 [submodule "hoppity"]
 	path = hoppity
 	url = https://github.com/avzero07/hoppity
+[submodule "gh-crawler"]
+	path = gh-crawler
+	url = https://github.com/avzero07/gh-crawler
