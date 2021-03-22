@@ -1,0 +1,3 @@
+[submodule "hoppity"]
+	path = hoppity
+	url = https://github.com/avzero07/hoppity
