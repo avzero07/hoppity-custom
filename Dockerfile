@@ -21,6 +21,7 @@ ENV DYLD_LIBRARY_PATH=/usr/local/cuda/lib:$DYLD_LIBRARY_PATH
 COPY . .
 RUN sudo chmod -R 777 .
 RUN cd torch_geometric && \
+    for f in *.tar.gz; do tar xf "$f"; done \
     pip install -e pytorch_scatter-1.4.0 && \
     pip install -e pytorch_sparse-0.4.3 && \
     pip install -e pytorch_cluster-1.4.5 && \
